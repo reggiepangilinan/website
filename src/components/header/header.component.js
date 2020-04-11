@@ -10,7 +10,15 @@ const Header = () => {
         <img src={logo} />
       </Link>
 
-      <div className="header-title">Software Developer.</div>
+      <div
+        className="header-title"
+        data-sal="slide-up"
+        data-sal-duration="500"
+        data-sal-delay="100"
+        data-sal-easing="ease"
+      >
+        Software Developer.
+      </div>
     </header>
   )
 }

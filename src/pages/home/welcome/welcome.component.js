@@ -7,7 +7,7 @@ import Image from "./image"
 const WelcomeSection = () => {
   return (
     <section className="welcome">
-      <SectionContent style={{ marginTop: "120px" }}>
+      <SectionContent>
         <Image name="welcome-image-reggie-pangilinan" maxWidth={1124} />
       </SectionContent>
     </section>

@@ -1,17 +1,18 @@
 import React from "react"
-import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Image from "./home/welcome/image"
-import SectionContent from "../components/sectioncontent/sectioncontent.component"
 import WelcomeSection from "./home/welcome/welcome.component"
 import AboutMeSection from "./home/aboutme/aboutme.component"
+import HireMeSection from "./home/hireme/hireme.component"
+import MyToolbeltSection from "./home/mytoolbelt/mytoolbelt.component"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <WelcomeSection />
     <AboutMeSection />
+    <MyToolbeltSection />
+    <HireMeSection />
   </Layout>
 )
 

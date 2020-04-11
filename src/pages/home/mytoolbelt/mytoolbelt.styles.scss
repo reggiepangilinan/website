@@ -1,0 +1,31 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixins.scss";
+
+section.my-toolbelt {
+  & > div.section-content {
+    margin-top: 100px;
+    padding: 50px 0px 50px;
+    position: relative;
+    background-color: white;
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 80px;
+    }
+    .tools-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+
+      max-width: 850px;
+
+      .tech-icon {
+        margin-right: 40px;
+        margin-bottom: 30px;
+        &:last-child {
+          margin-right: 0px;
+        }
+      }
+    }
+  }
+}

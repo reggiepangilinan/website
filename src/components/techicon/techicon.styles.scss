@@ -1,0 +1,19 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.tech-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 10px;
+  }
+
+  .tech-name {
+    line-height: 1.2rem;
+    font-size: 0.9rem;
+  }
+}

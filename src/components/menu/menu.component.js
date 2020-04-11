@@ -8,7 +8,12 @@ import github from "./icon-github.svg"
 const Menu = () => {
   return (
     <nav>
-      <ul>
+      <ul
+        data-sal="slide-up"
+        data-sal-duration="2000"
+        data-sal-delay="50"
+        data-sal-easing="ease"
+      >
         <li>
           <Link to="">Home</Link>
         </li>

@@ -6,14 +6,21 @@ import SectionContent from "../../../components/sectioncontent/sectioncontent.co
 const AboutMeSection = () => {
   return (
     <section className="about-me">
-      <SectionContent
-        style={{
-          marginTop: "100px",
-          paddingTop: "200px",
-        }}
-      >
-        <h1>About me 👓</h1>
-        <p>
+      <SectionContent>
+        <h1
+          data-sal="slide-up"
+          data-sal-duration="500"
+          data-sal-delay="50"
+          data-sal-easing="ease"
+        >
+          About me
+        </h1>
+        <p
+          data-sal="slide-up"
+          data-sal-duration="500"
+          data-sal-delay="300"
+          data-sal-easing="ease"
+        >
           Amet ut sit enim eu. Ullamco labore elit sit aliquip sint amet ipsum
           esse labore. Occaecat voluptate proident cillum sint et consectetur
           quis culpa dolore. Exercitation labore minim ea excepteur sint eiusmod
