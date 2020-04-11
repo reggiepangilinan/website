@@ -19,8 +19,9 @@ const MyToolbeltSection = () => {
         </h1>
         <div
           className="tools-wrapper"
-          data-sal="slide-up"
-          data-sal-duration="500"
+          data-sal="fade"
+          data-sal-duration="1500"
+          data-sal-delay="50"
           data-sal-easing="ease"
         >
           {tools.map(t => (

@@ -20,7 +20,7 @@ const Image = ({ name, maxWidth }) => {
         relativePath: { eq: "welcome-image-reggie-pangilinan.png" }
       ) {
         childImageSharp {
-          fluid(maxWidth: 700) {
+          fluid(maxWidth: 1124) {
             ...GatsbyImageSharpFluid
           }
         }

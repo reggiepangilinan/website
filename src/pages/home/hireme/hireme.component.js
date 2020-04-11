@@ -11,7 +11,7 @@ const HireMeSection = () => {
         <div>
           <h1
             data-sal="slide-up"
-            data-sal-duration="2000"
+            data-sal-duration="1000"
             data-sal-delay="50"
             data-sal-easing="ease"
           >
@@ -19,8 +19,8 @@ const HireMeSection = () => {
           </h1>
           <h3
             data-sal="slide-up"
-            data-sal-duration="2000"
-            data-sal-delay="150"
+            data-sal-duration="1000"
+            data-sal-delay="50"
             data-sal-easing="ease"
           >
             Email me at
