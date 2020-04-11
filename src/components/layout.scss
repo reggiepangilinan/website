@@ -1,0 +1,24 @@
+@import "../styles/variables.scss";
+@import "../styles/mixins.scss";
+
+* {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  margin: 0;
+  padding: 0;
+  letter-spacing: -0.02em;
+  color: $colour-primary-text;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  main section {
+    height: 100vh;
+  }
+}

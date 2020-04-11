@@ -1,0 +1,19 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  margin: 40px;
+
+  img {
+    width: 100px;
+  }
+
+  & > div.header-title {
+    margin-left: 90px;
+    text-decoration: underline;
+  }
+}

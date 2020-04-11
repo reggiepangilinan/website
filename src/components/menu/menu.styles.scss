@@ -1,0 +1,56 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+nav {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: $size-sidenav-with-desktop;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  ul {
+    margin: 40px;
+    list-style: none;
+    li {
+      margin-bottom: 8px;
+    }
+  }
+
+  footer {
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    line-height: 0.9rem;
+
+    div.social-links-wrapper {
+      display: flex;
+      a {
+        margin: 0px;
+        svg {
+          fill: $colour-light-text;
+        }
+
+        img {
+          width: 20px;
+          margin-right: 8px;
+        }
+      }
+      margin-bottom: 10px;
+    }
+
+    a {
+      font-size: 0.7rem;
+      text-decoration: underline;
+      margin-bottom: 10px;
+    }
+
+    small {
+      font-size: 0.7rem;
+      color: $colour-light-text;
+      margin-bottom: 10px;
+    }
+  }
+}

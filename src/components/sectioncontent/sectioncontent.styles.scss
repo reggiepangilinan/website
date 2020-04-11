@@ -1,0 +1,8 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+section .section-content {
+  width: calc(70vw);
+  margin-left: 40px;
+  margin-right: 40px;
+}
