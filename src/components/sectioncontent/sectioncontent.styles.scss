@@ -2,7 +2,27 @@
 @import "../../styles/mixins.scss";
 
 section .section-content {
-  width: calc(70vw);
-  margin-left: 40px;
-  margin-right: 40px;
+  @include desktop {
+    width: 70vw;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  @include tablet {
+    width: 70vw;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  @include iphonex {
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  @include phone {
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }

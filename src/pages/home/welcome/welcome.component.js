@@ -9,13 +9,11 @@ const WelcomeSection = () => {
     <section className="welcome">
       <SectionContent>
         <div
+          className="image-wrapper"
           data-sal="fade"
-          data-sal-duration="1500"
+          data-sal-duration="500"
           data-sal-delay="50"
           data-sal-easing="ease"
-          style={{
-            height: "70vh",
-          }}
         >
           <Image name="welcome-image-reggie-pangilinan" maxWidth={1124} />
         </div>

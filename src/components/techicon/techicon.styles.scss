@@ -7,9 +7,13 @@
   align-items: center;
 
   img {
-    height: 100px;
-    width: 100px;
     margin-bottom: 10px;
+    height: 70px;
+    width: 70px;
+    @include phone {
+      height: 60px;
+      width: 60px;
+    }
   }
 
   .tech-name {

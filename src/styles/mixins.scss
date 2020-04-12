@@ -1,0 +1,28 @@
+//BREAKPOINTS
+$breakpoint-phone: 767px !default;
+$breakpoint-tablet: 768px !default;
+$breakpoint-desktop: 992px !default;
+
+@mixin phone {
+  @media (max-width: #{$breakpoint-phone}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: #{$breakpoint-tablet}) {
+    @content;
+  }
+}
+
+@mixin iphonex {
+  @media (min-width: 769px) and (max-width: 812px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$breakpoint-desktop}) {
+    @content;
+  }
+}

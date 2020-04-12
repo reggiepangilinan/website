@@ -19,6 +19,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   main section {
-    height: 100vh;
+    @include desktop {
+      height: 100vh;
+    }
   }
 }

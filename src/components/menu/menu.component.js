@@ -1,16 +1,23 @@
 import React from "react"
+import PropTypes from "prop-types"
 import "./menu.styles.scss"
 import { Link } from "gatsby"
 import ig from "./icon-ig.svg"
 import linkedin from "./icon-linkedin.svg"
 import github from "./icon-github.svg"
 
-const Menu = () => {
+const Menu = ({ isMenuOpen }) => {
   return (
-    <nav>
+    <nav
+      className={isMenuOpen ? "nav-menu-open" : "nav-menu"}
+      data-sal="fade"
+      data-sal-duration="500"
+      data-sal-delay="50"
+      data-sal-easing="ease"
+    >
       <ul
         data-sal="slide-up"
-        data-sal-duration="2000"
+        data-sal-duration="100"
         data-sal-delay="50"
         data-sal-easing="ease"
       >
@@ -45,6 +52,10 @@ const Menu = () => {
       </footer>
     </nav>
   )
+}
+
+Menu.propTypes = {
+  isMenuOpen: PropTypes.bool.isRequired,
 }
 
 export default Menu

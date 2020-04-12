@@ -6,14 +6,62 @@ header {
   top: 0;
   left: 0;
   display: flex;
-  margin: 40px;
   z-index: 700;
+
+  @include desktop {
+    margin: 40px;
+  }
+
+  @include iphonex {
+    margin: 20px;
+  }
+
+  @include tablet {
+    margin: 40px;
+  }
+
+  @include phone {
+    margin: 20px;
+  }
+
   img {
     width: 100px;
   }
 
   & > div.header-title {
-    margin-left: 90px;
+    margin-left: 80px;
     text-decoration: underline;
+
+    @include phone {
+      display: none;
+    }
+  }
+
+  & > div.header-menu {
+    display: none;
+
+    @include tablet {
+      display: block;
+      font-size: 1.1rem;
+      position: fixed;
+      right: 0;
+      margin-right: 40px;
+
+      @include phone {
+        margin-right: 20px;
+      }
+    }
+
+    @include iphonex {
+      display: block;
+      font-size: 1.1rem;
+      position: fixed;
+      right: 0;
+      margin-right: 20px;
+
+      @include phone {
+        margin-right: 20px;
+      }
+    }
   }
 }

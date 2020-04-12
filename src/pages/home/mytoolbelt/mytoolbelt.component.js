@@ -17,13 +17,7 @@ const MyToolbeltSection = () => {
         >
           What's in my toolbelt?
         </h1>
-        <div
-          className="tools-wrapper"
-          data-sal="fade"
-          data-sal-duration="1500"
-          data-sal-delay="50"
-          data-sal-easing="ease"
-        >
+        <div className="tools-wrapper">
           {tools.map(t => (
             <TechIcon image={t.icon} name={t.name} />
           ))}
