@@ -9,7 +9,7 @@ import github from "./icon-github.svg"
 const Menu = ({ isMenuOpen }) => {
   return (
     <nav
-      className={isMenuOpen ? "nav-menu-open" : "nav-menu"}
+      className={isMenuOpen ? "nav-menu open" : "nav-menu"}
       data-sal="fade"
       data-sal-duration="500"
       data-sal-delay="50"

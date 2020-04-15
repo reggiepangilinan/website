@@ -8,8 +8,17 @@
 
   img {
     margin-bottom: 10px;
-    height: 70px;
-    width: 70px;
+
+    @include desktop {
+      height: 100px;
+      width: 100px;
+    }
+
+    @include tablet {
+      height: 90px;
+      width: 90px;
+    }
+
     @include phone {
       height: 60px;
       width: 60px;

@@ -2,16 +2,20 @@
 @import "../../styles/mixins.scss";
 
 .nav-menu {
-  @include desktop {
-    position: fixed;
-    right: 0;
-    top: 0;
-    height: 100vh;
-    width: $size-sidenav-with-desktop;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  transition: opacity 0.5s linear;
+  top: 0;
+  right: 0;
+  opacity: 0 !important;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
 
+  @include desktop {
+    opacity: 1 !important;
+    transition: opacity 0.5s linear;
+    width: $size-sidenav-with-desktop;
     ul {
       margin: 40px;
       list-style: none;
@@ -19,131 +23,79 @@
         margin-bottom: 8px;
       }
     }
-
-    footer {
-      margin: 40px;
-      display: flex;
-      flex-direction: column;
-      line-height: 0.9rem;
-
-      div.social-links-wrapper {
-        display: flex;
-        a {
-          margin: 0px;
-          svg {
-            fill: $colour-light-text;
-          }
-
-          img {
-            width: 20px;
-            margin-right: 8px;
-          }
-        }
-        margin-bottom: 10px;
-      }
-
-      a {
-        font-size: 0.7rem;
-        text-decoration: underline;
-        margin-bottom: 10px;
-      }
-
-      small {
-        font-size: 0.7rem;
-        color: $colour-light-text;
-        margin-bottom: 10px;
-      }
-    }
-  }
-
-  @include iphonex {
-    display: none !important;
   }
 
   @include tablet {
-    display: none !important;
+    background-color: $colour-white;
+    opacity: 0;
+    width: 100vw;
+    z-index: 500;
+    ul {
+      margin: 130px 40px;
+      list-style: none;
+      li {
+        font-size: 2.5rem;
+        margin-bottom: 3px;
+      }
+    }
   }
 
   @include phone {
-    display: none !important;
+    background-color: $colour-white;
+    opacity: 0;
+    width: 100vw;
+    z-index: 500;
+    ul {
+      margin: 130px 20px;
+      list-style: none;
+      li {
+        font-size: $size-large-font;
+        margin-bottom: 3px;
+      }
+    }
   }
 }
 
-.nav-menu-open {
-  visibility: visible;
-  transition: all ease-in-out 1s;
-  overflow: hidden;
-  position: fixed;
-  right: 0;
-  top: 0;
-  height: 100vh;
-  width: 100vw;
-  z-index: 500;
-  background-color: $colour-white;
+.nav-menu.open {
+  opacity: 1 !important;
+  transition: opacity 0.5s ease;
+}
 
-  ul {
-    @include tablet {
-      margin: 130px 40px;
-    }
+.nav-menu > footer {
+  margin: 40px;
 
-    @include iphonex {
-      margin: 80px 20px;
-    }
+  @include phone {
+    margin: 20px;
+  }
+  display: flex;
+  flex-direction: column;
+  line-height: 0.9rem;
 
-    @include phone {
-      margin: 130px 20px;
-    }
+  div.social-links-wrapper {
+    display: flex;
+    a {
+      margin: 0px;
+      svg {
+        fill: $colour-light-text;
+      }
 
-    list-style: none;
-    li {
-      font-size: $size-large-font;
-      margin-bottom: 3px;
+      img {
+        width: 20px;
+        margin-right: 8px;
+      }
     }
+    margin-bottom: 10px;
   }
 
-  footer {
-    @include tablet {
-      margin: 40px;
-    }
+  a {
+    font-size: 0.7rem;
+    text-decoration: underline;
+    margin-bottom: 10px;
+  }
 
-    @include iphonex {
-      margin: 20px;
-    }
-
-    @include phone {
-      margin: 20px;
-    }
-
-    display: flex;
-    flex-direction: column;
-    line-height: 0.9rem;
-
-    div.social-links-wrapper {
-      display: flex;
-      a {
-        margin: 0px;
-        svg {
-          fill: $colour-light-text;
-        }
-
-        img {
-          width: 20px;
-          margin-right: 8px;
-        }
-      }
-      margin-bottom: 5px;
-    }
-
-    a {
-      font-size: 0.7rem;
-      text-decoration: underline;
-      margin-bottom: 10px;
-    }
-
-    small {
-      font-size: 0.7rem;
-      color: $colour-light-text;
-      margin-bottom: 10px;
-    }
+  small {
+    font-size: 0.7rem;
+    color: $colour-light-text;
+    margin-bottom: 10px;
   }
 }

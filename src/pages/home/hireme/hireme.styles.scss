@@ -6,10 +6,6 @@ section.hire-me {
     height: 100vh;
   }
 
-  @include iphonex {
-    height: 100vh;
-  }
-
   @include phone {
     height: 100vh;
   }
@@ -26,12 +22,6 @@ section.hire-me {
       height: 65vh;
       margin-top: 100px;
       padding-top: 200px;
-    }
-
-    @include iphonex {
-      height: 50vh;
-      margin-top: 200px;
-      padding-top: 50px;
     }
 
     @include phone {
