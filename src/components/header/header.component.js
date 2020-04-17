@@ -1,27 +1,21 @@
 import React from "react"
 import PropTypes from "prop-types"
-import logo from "./logo-reggie-pangilinan.svg"
 import "./header.styles.scss"
-import { Link } from "gatsby"
-
+import Brand from "../brand/brand.component"
+import { useWindowScroll } from "react-use"
 const Header = ({ isMenuOpen, setIsMenuOpen }) => {
+  const { y } = useWindowScroll()
+
+  const lastPanel =
+    document.documentElement.offsetHeight -
+    document.documentElement.clientHeight -
+    75
+
+  const hasScrolledToEnd = y >= lastPanel
+
   return (
-    <header>
-      <div></div>
-      <Link to="/">
-        <img src={logo} />
-      </Link>
-
-      <div
-        className="header-title"
-        data-sal="slide-up"
-        data-sal-duration="500"
-        data-sal-delay="100"
-        data-sal-easing="ease"
-      >
-        Software Developer.
-      </div>
-
+    <header className={hasScrolledToEnd ? "transparent" : ""}>
+      <Brand />
       {isMenuOpen ? (
         <div
           className="header-menu"

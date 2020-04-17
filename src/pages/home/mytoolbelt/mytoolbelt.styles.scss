@@ -2,31 +2,22 @@
 @import "../../../styles/mixins.scss";
 
 section.my-toolbelt {
-  @include tablet {
-    height: 80vh;
-  }
-
-  @include phone {
-    height: auto;
-  }
-
   & > div.section-content {
-    margin-top: 100px;
-    padding: 50px 0px 10px;
+    @include tablet {
+      margin-top: 200px;
+    }
 
     h1 {
+      margin-bottom: 80px;
       @include desktop {
         font-size: $size-larger-font;
-        margin-bottom: 50px;
       }
       @include tablet {
         font-size: $size-larger-font;
-        margin-bottom: 50px;
       }
 
       @include phone {
         font-size: $size-large-font;
-        margin-bottom: 80px;
       }
     }
     .tools-wrapper {
@@ -48,8 +39,8 @@ section.my-toolbelt {
         align-items: center;
 
         .tech-icon {
-          margin-right: 25px;
-          margin-bottom: 20px;
+          margin-right: 30px;
+          margin-bottom: 30px;
           &:last-child {
             margin-right: 0px;
           }

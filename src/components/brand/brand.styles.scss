@@ -1,0 +1,16 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.brand {
+  display: flex;
+  img {
+    width: 100px;
+  }
+  .brand-title {
+    @include phone {
+      display: none;
+    }
+    margin-left: 80px;
+    text-decoration: underline;
+  }
+}

@@ -2,12 +2,8 @@
 @import "../../../styles/mixins.scss";
 
 section.about-me {
-  @include tablet {
-    height: 70vh;
-  }
   & > div.section-content {
     @include desktop {
-      margin-top: 100px;
       padding: 50px 0px 50px;
     }
 
@@ -16,19 +12,36 @@ section.about-me {
     }
 
     h1 {
+      margin-bottom: 50px;
       @include desktop {
         font-size: $size-larger-font;
       }
-
       @include tablet {
         font-size: $size-larger-font;
       }
-
       @include phone {
         font-size: $size-large-font;
+        margin-bottom: 80px;
+      }
+    }
+    p {
+      margin-bottom: 30px;
+      letter-spacing: 0.25px;
+      line-height: $size-large-font;
+      @include desktop {
+        max-width: 55vw;
       }
 
-      margin-bottom: 20px;
+      @include tablet {
+        margin-bottom: 30px;
+      }
+      @include phone {
+        margin-bottom: 40px;
+      }
+    }
+    a {
+      letter-spacing: 0.3px;
+      text-decoration: underline;
     }
   }
 }

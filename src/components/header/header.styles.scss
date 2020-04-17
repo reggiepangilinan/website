@@ -2,40 +2,43 @@
 @import "../../styles/mixins.scss";
 
 header {
+  display: flex;
   position: fixed;
   top: 0;
   left: 0;
-  display: flex;
   z-index: 700;
+  width: 100vw;
+  @include desktop {
+    width: $size-contentwith-desktop;
+  }
+
+  background-color: $colour-white;
 
   @include desktop {
-    margin: 40px;
+    padding: 15px 40px;
   }
-
   @include tablet {
-    margin: 40px;
+    padding: 15px 40px;
   }
-
   @include phone {
-    margin: 20px;
+    padding: 10px 20px 7px;
   }
-
-  img {
-    width: 100px;
-  }
-
-  & > div.header-title {
-    margin-left: 80px;
-    text-decoration: underline;
-
-    @include phone {
-      display: none;
+  .brand {
+    display: flex;
+    img {
+      width: 100px;
+    }
+    .brand-title {
+      @include phone {
+        display: none;
+      }
+      margin-left: 80px;
+      text-decoration: underline;
     }
   }
 
-  & > div.header-menu {
+  .header-menu {
     display: none;
-
     @include tablet {
       display: block;
       font-size: 1.1rem;
@@ -48,4 +51,8 @@ header {
       }
     }
   }
+}
+
+header.transparent {
+  background-color: transparent;
 }

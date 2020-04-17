@@ -17,7 +17,7 @@
     transition: opacity 0.5s linear;
     width: $size-sidenav-with-desktop;
     ul {
-      margin: 40px;
+      margin: 20px 40px;
       list-style: none;
       li {
         margin-bottom: 8px;
@@ -88,14 +88,13 @@
   }
 
   a {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     text-decoration: underline;
     margin-bottom: 10px;
   }
 
   small {
     font-size: 0.7rem;
-    color: $colour-light-text;
     margin-bottom: 10px;
   }
 }

@@ -37,17 +37,23 @@ const Menu = ({ isMenuOpen }) => {
 
       <footer>
         <div className="social-links-wrapper">
-          <Link to="">
-            <img src={github} />
-          </Link>
-          <Link to="">
-            <img src={linkedin} />
-          </Link>
-          <Link to="">
-            <img src={ig} />
-          </Link>
+          <a href="https://github.com/reggieboyYEAH">
+            <img src={github} alt="https://github.com/reggieboyYEAH" />
+          </a>
+          <a href="https://linkedin.com/in/reggiepangilinan/">
+            <img
+              src={linkedin}
+              alt="https://linkedin.com/in/reggiepangilinan/"
+            />
+          </a>
+          <a href="https://www.instagram.com/reggiepangilinanphotos/">
+            <img
+              src={ig}
+              alt="https://www.instagram.com/reggiepangilinanphotos/"
+            />
+          </a>
         </div>
-        <Link to="">Download my CV here</Link>
+        <a href="">Download my CV here</a>
         <small>This website is handcrafted with pride using Gatsby. 💯</small>
       </footer>
     </nav>

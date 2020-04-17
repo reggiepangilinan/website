@@ -3,13 +3,13 @@
 
 section .section-content {
   @include desktop {
-    width: 70vw;
+    width: $size-contentwith-desktop;
     margin-left: 40px;
     margin-right: 40px;
   }
 
   @include tablet {
-    width: 70vw;
+    width: 80vw;
     margin-left: 40px;
     margin-right: 40px;
   }

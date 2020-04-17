@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import "./aboutme.styles.scss"
 import SectionContent from "../../../components/sectioncontent/sectioncontent.component"
@@ -18,32 +19,42 @@ const AboutMeSection = () => {
         <p
           data-sal="slide-up"
           data-sal-duration="500"
-          data-sal-delay="300"
+          data-sal-delay="50"
           data-sal-easing="ease"
         >
-          Amet ut sit enim eu. Ullamco labore elit sit aliquip sint amet ipsum
-          esse labore. Occaecat voluptate proident cillum sint et consectetur
-          quis culpa dolore. Exercitation labore minim ea excepteur sint eiusmod
-          fugiat Lorem. Proident aliqua ut ipsum amet sint consectetur et
-          eiusmod dolor id exercitation est id nostrud. Et ea duis non amet in
-          esse eu Lorem excepteur non. Officia dolor exercitation veniam dolor
-          magna esse Lorem eu sit aliquip. Enim quis minim sit et dolore ut
-          ipsum exercitation mollit ullamco elit. Minim magna fugiat id duis
-          laborum irure esse proident consequat cupidatat. Officia nostrud
-          commodo ea deserunt eiusmod nisi labore Lorem. Ea officia laborum
-          magna aliquip. Laboris fugiat ex deserunt velit eu. Ad labore nostrud
-          adipisicing excepteur laboris nostrud labore excepteur. Culpa
-          consequat mollit eu aute dolore. Excepteur nisi nisi non dolore amet
-          consequat deserunt mollit labore ullamco Lorem quis enim sit. Veniam
-          fugiat anim non nulla est voluptate deserunt aute consequat eu.
-          Excepteur voluptate eiusmod ipsum esse. Qui dolore reprehenderit ut
-          excepteur sunt officia sunt cillum. Adipisicing cupidatat labore
-          proident do laboris voluptate fugiat. Sunt fugiat velit laboris
-          occaecat. Minim ipsum exercitation non nisi dolor exercitation enim ut
-          sint nostrud excepteur aliqua enim adipisicing. Mollit irure ex duis
-          pariatur nisi elit culpa deserunt non adipisicing magna magna minim.
-          Ipsum exercitation sint consequat anim proident adipisicing pariatur
-          magna exercitation veniam esse cupidatat.
+          I am software developer born and raised in Manila, Philippines.
+          Currently based in Sydney, Australia. I love working with people to
+          create products and services that helps businesses solve their
+          problems through efficient software development. It's just more fun
+          that way 😁
+        </p>
+        <p
+          data-sal="slide-up"
+          data-sal-duration="500"
+          data-sal-delay="50"
+          data-sal-easing="ease"
+        >
+          I've been doing it for 15 years and I've worked with a variety of
+          organizations - from start-ups to established businesses and
+          government agency in different parts of the world. Did I get you
+          interested enough to see what I've been up to all those years?{" "}
+          <Link to="">Please click here.</Link>
+        </p>
+        <p
+          data-sal="slide-up"
+          data-sal-duration="500"
+          data-sal-delay="50"
+          data-sal-easing="ease"
+        >
+          And for something a little philosophical, you know what keeps me
+          going? The promise of a product that I've worked on improving people's
+          quality of life in whatever way. 🌅🌃
+        </p>
+        <p>
+          BTW, In my free time I go out and take 📸 photos.{" "}
+          <a href="https://www.instagram.com/reggiepangilinanphotos/">
+            Check it out!
+          </a>
         </p>
       </SectionContent>
     </section>

@@ -2,51 +2,33 @@
 @import "../../../styles/mixins.scss";
 
 section.hire-me {
-  @include tablet {
-    height: 100vh;
-  }
+  transition: background-color 0.2s linear;
 
-  @include phone {
-    height: 100vh;
-  }
-
-  background-color: $colour-yellow;
   & > div.section-content {
-    @include desktop {
-      height: 65vh;
-      margin-top: 100px;
-      padding-top: 200px;
-    }
-
-    @include tablet {
-      height: 65vh;
-      margin-top: 100px;
-      padding-top: 200px;
-    }
-
-    @include phone {
-      height: 50vh;
-      margin-top: 200px;
-      padding-top: 120px;
-    }
-
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    height: 100vh;
 
-    & > div {
-      margin-top: 70px;
-      h1 {
-        @include desktop {
-          font-size: $size-larger-font;
-        }
+    & > div.content-wrapper {
+      @include desktop {
+        height: 95vh;
+      }
 
-        @include tablet {
-          font-size: $size-larger-font;
-        }
-
-        @include phone {
-          font-size: $size-large-font;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      & .content-top {
+        margin-top: 25vh;
+        h1 {
+          @include desktop {
+            font-size: $size-larger-font;
+          }
+          @include tablet {
+            font-size: $size-larger-font;
+          }
+          @include phone {
+            font-size: $size-large-font;
+          }
         }
       }
 
@@ -60,4 +42,8 @@ section.hire-me {
       }
     }
   }
+}
+
+section.hire-me.colored {
+  background-color: $colour-yellow;
 }

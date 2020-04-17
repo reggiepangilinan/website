@@ -7,6 +7,12 @@ module.exports = {
   plugins: [
     "gatsby-plugin-sass",
     {
+      resolve: "gatsby-plugin-scroll-indicator",
+      options: {
+        color: "#2b2b2b",
+      },
+    },
+    {
       resolve: "gatsby-plugin-scroll-reveal",
       options: {
         threshold: 1, // Percentage of an element's area that needs to be visible to launch animation
