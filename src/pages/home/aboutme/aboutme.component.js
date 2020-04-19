@@ -48,7 +48,7 @@ const AboutMeSection = () => {
         >
           And for something a little philosophical, you know what keeps me
           going? The promise of a product that I've worked on improving people's
-          quality of life in whatever way. 🌅🌃
+          businesses, workflow or even quality of life in whatever way. 🌅🌃
         </p>
         <p>
           BTW, In my free time I go out and take 📸 photos.{" "}

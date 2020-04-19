@@ -12,16 +12,17 @@ section.about-me {
     }
 
     h1 {
-      margin-bottom: 50px;
       @include desktop {
         font-size: $size-larger-font;
+        margin-bottom: 50px;
       }
       @include tablet {
         font-size: $size-larger-font;
+        margin-bottom: 50px;
       }
       @include phone {
         font-size: $size-large-font;
-        margin-bottom: 80px;
+        margin-bottom: 50px;
       }
     }
     p {
@@ -29,7 +30,8 @@ section.about-me {
       letter-spacing: 0.25px;
       line-height: $size-large-font;
       @include desktop {
-        max-width: 55vw;
+        max-width: 65vw;
+        margin-bottom: 20px;
       }
 
       @include tablet {

@@ -15,7 +15,7 @@ header {
   background-color: $colour-white;
 
   @include desktop {
-    padding: 15px 40px;
+    padding: 40px 40px 15px;
   }
   @include tablet {
     padding: 15px 40px;

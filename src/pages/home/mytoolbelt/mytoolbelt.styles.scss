@@ -8,7 +8,7 @@ section.my-toolbelt {
     }
 
     h1 {
-      margin-bottom: 80px;
+      margin-bottom: 60px;
       @include desktop {
         font-size: $size-larger-font;
       }
@@ -26,8 +26,8 @@ section.my-toolbelt {
       align-items: center;
       max-width: 900px;
       .tech-icon {
-        margin-right: 40px;
-        margin-bottom: 30px;
+        margin-right: 70px;
+        margin-bottom: 50px;
         &:last-child {
           margin-right: 0px;
         }
