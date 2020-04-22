@@ -11,18 +11,24 @@ const Menu = ({ isMenuOpen }) => {
     <nav className={isMenuOpen ? "nav-menu open" : "nav-menu"}>
       <ul>
         <li>
-          <Link to="/" activeStyle={{ color: "red" }}>
+          <Link to="/" activeClassName="active">
             Home
           </Link>
         </li>
         <li>
-          <Link to="/timeline/">Timeline</Link>
+          <Link to="/timeline/" activeClassName="active">
+            Timeline
+          </Link>
         </li>
         <li>
-          <Link to="">Projects</Link>
+          <Link to="/projects/" activeClassName="active">
+            Projects
+          </Link>
         </li>
         <li>
-          <Link to="">Blog</Link>
+          <Link to="/blog/" activeClassName="active">
+            Blog
+          </Link>
         </li>
       </ul>
 

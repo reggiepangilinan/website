@@ -21,15 +21,18 @@ const HireMeSection = () => {
             <h1
               data-sal="slide-up"
               data-sal-duration="500"
-              data-sal-delay="500"
+              data-sal-delay="50"
               data-sal-easing="ease"
             >
-              Let's do amazing things together. 🤝
+              Let's do amazing things together.{" "}
+              <span role="img" className="wave">
+                🤝
+              </span>
             </h1>
             <h3
               data-sal="slide-up"
               data-sal-duration="500"
-              data-sal-delay="500"
+              data-sal-delay="50"
               data-sal-easing="ease"
             >
               Email me at
@@ -38,7 +41,7 @@ const HireMeSection = () => {
               href="mailto:hello@reggiepangilinan.com?subject=Let's%20work%20together%20mate!"
               data-sal="slide-up"
               data-sal-duration="500"
-              data-sal-delay="500"
+              data-sal-delay="50"
               data-sal-easing="ease"
             >
               hello@reggiepangilinan.com
@@ -47,7 +50,7 @@ const HireMeSection = () => {
           <h3
             data-sal="slide-up"
             data-sal-duration="500"
-            data-sal-delay="500"
+            data-sal-delay="50"
             data-sal-easing="ease"
           >
             Have a great day! 😘

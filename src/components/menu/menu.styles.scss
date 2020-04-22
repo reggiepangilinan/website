@@ -2,7 +2,7 @@
 @import "../../styles/mixins.scss";
 
 .nav-menu {
-  transition: opacity 0.5s linear;
+  transition: opacity 0.2s linear;
   top: 0;
   right: 0;
   opacity: 0 !important;
@@ -14,10 +14,10 @@
 
   @include desktop {
     opacity: 1 !important;
-    transition: opacity 0.5s linear;
+    transition: opacity 0.2s linear;
     width: $size-sidenav-with-desktop;
     ul {
-      margin: 40px;
+      margin: 30px 40px;
       list-style: none;
       li {
         margin-bottom: 8px;
@@ -58,11 +58,15 @@
 
 .nav-menu.open {
   opacity: 1 !important;
-  transition: opacity 0.5s ease;
+  transition: opacity 0.2s ease;
+}
+
+.nav-menu a.active {
+  color: $colour-light-text;
 }
 
 .nav-menu > footer {
-  margin: 40px;
+  margin: 20px 40px;
 
   @include phone {
     margin: 20px;
@@ -94,6 +98,7 @@
   }
 
   small {
+    color: $colour-light-text;
     font-size: 0.7rem;
     margin-bottom: 10px;
   }

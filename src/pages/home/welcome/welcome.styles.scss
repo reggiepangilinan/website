@@ -3,7 +3,7 @@
 
 section.welcome {
   & > div.section-content {
-    margin-top: 120px;
+    margin-top: 100px;
 
     @include phone {
       margin-top: 100px;
@@ -12,6 +12,50 @@ section.welcome {
     .image-wrapper {
       @include desktop {
         height: 70vh;
+      }
+      z-index: 10;
+
+      .greeting {
+        div,
+        span {
+          @include desktop {
+            color: $colour-white;
+          }
+        }
+
+        font-weight: bold;
+        z-index: 20;
+
+        @include desktop {
+          position: absolute;
+          font-size: $size-large-font;
+          top: 30%;
+        }
+
+        @include tablet {
+          font-size: $size-large-font;
+          top: 25%;
+        }
+      }
+
+      .greeting.part1 {
+        @include desktop {
+          left: 11%;
+        }
+
+        @include tablet {
+          margin-top: 150px;
+        }
+      }
+
+      .greeting.part2 {
+        @include desktop {
+          left: 43%;
+        }
+
+        @include tablet {
+          margin: 50px 0px;
+        }
       }
     }
   }

@@ -22,11 +22,11 @@ const AboutMeSection = () => {
           data-sal-delay="50"
           data-sal-easing="ease"
         >
-          I am software developer born and raised in Manila, Philippines.
-          Currently based in Sydney, Australia. I love working with people to
-          create products and services that helps businesses solve their
-          problems through efficient software development. It's just more fun
-          that way 😁
+          I am software developer born and raised in Manila, Philippines. Now
+          based in Sydney, Australia. I love working with people, It's just more
+          fun that way 😁 especially when creating products and services that
+          helps businesses solve their problems through efficient software
+          development.
         </p>
         <p
           data-sal="slide-up"
@@ -47,8 +47,9 @@ const AboutMeSection = () => {
           data-sal-easing="ease"
         >
           And for something a little philosophical, you know what keeps me
-          going? The promise of a product that I've worked on improving people's
-          businesses, workflow or even quality of life in whatever way. 🌅🌃
+          going? The promise of a product that I've worked on improving
+          businesses, workflow or even people's quality of life in whatever way.
+          🌅🌃
         </p>
         <p>
           BTW, In my free time I go out and take 📸 photos.{" "}

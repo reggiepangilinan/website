@@ -1,6 +1,6 @@
 //COLOURS
 $colour-primary-text: #2b2b2b;
-$colour-light-text: #a4a4a4;
+$colour-light-text: lighten($colour-primary-text, 35);
 $colour-yellow: #fff16f;
 $colour-white: #fff;
 

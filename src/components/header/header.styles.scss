@@ -15,26 +15,13 @@ header {
   background-color: $colour-white;
 
   @include desktop {
-    padding: 40px 40px 15px;
+    padding: 30px 20px 7px 40px;
   }
   @include tablet {
     padding: 15px 40px;
   }
   @include phone {
     padding: 10px 20px 7px;
-  }
-  .brand {
-    display: flex;
-    img {
-      width: 100px;
-    }
-    .brand-title {
-      @include phone {
-        display: none;
-      }
-      margin-left: 80px;
-      text-decoration: underline;
-    }
   }
 
   .header-menu {
