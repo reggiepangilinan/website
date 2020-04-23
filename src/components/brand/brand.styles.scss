@@ -4,7 +4,7 @@
 .brand {
   display: flex;
   img {
-    width: 100px;
+    width: 80px;
   }
   .brand-title {
     @include phone {

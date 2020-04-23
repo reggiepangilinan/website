@@ -1,10 +1,21 @@
-import React from "react"
-import PropTypes from "prop-types"
+import React, { useState } from "react"
 import "./welcome.styles.scss"
 import SectionContent from "../../../components/sectioncontent/sectioncontent.component"
 import Image from "./image"
+import { useInterval } from "react-use"
+import Typewriter from "typewriter-effect"
+const textArray = ["scalable", "beautiful", "secure", "user-friendly"]
 
 const WelcomeSection = () => {
+  const [currentIndex, setCurrentIndex] = useState(0)
+  const [text, setText] = useState(textArray[0])
+  useInterval(() => {
+    const nextIndex = currentIndex + 1
+    setText(textArray[currentIndex])
+    setCurrentIndex(nextIndex)
+    if (nextIndex === textArray.length) setCurrentIndex(0)
+  }, 6000)
+
   return (
     <section className="welcome">
       <SectionContent>
@@ -33,7 +44,15 @@ const WelcomeSection = () => {
             data-sal-easing="ease"
           >
             <div>
-              I make <span>scalable</span>
+              I make{" "}
+              <Typewriter
+                options={{
+                  pauseFor: 3500,
+                  strings: textArray,
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
             </div>
             <div>solutions.</div>
           </div>

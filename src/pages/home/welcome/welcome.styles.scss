@@ -6,7 +6,7 @@ section.welcome {
     margin-top: 100px;
 
     @include phone {
-      margin-top: 100px;
+      margin-top: 130px;
     }
 
     .image-wrapper {
@@ -29,7 +29,7 @@ section.welcome {
         @include desktop {
           position: absolute;
           font-size: $size-large-font;
-          top: 30%;
+          top: 27%;
         }
 
         @include tablet {
@@ -40,7 +40,7 @@ section.welcome {
 
       .greeting.part1 {
         @include desktop {
-          left: 11%;
+          left: 10%;
         }
 
         @include tablet {
@@ -49,6 +49,10 @@ section.welcome {
       }
 
       .greeting.part2 {
+        .Typewriter {
+          height: $size-large-font;
+          display: inline-block;
+        }
         @include desktop {
           left: 43%;
         }
