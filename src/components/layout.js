@@ -13,7 +13,7 @@ import Header from "./header/header.component"
 import Menu from "./menu/menu.component"
 import "./layout.scss"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, hideTitle }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -27,7 +27,11 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+      <Header
+        isMenuOpen={isMenuOpen}
+        setIsMenuOpen={setIsMenuOpen}
+        hideTitle={hideTitle}
+      />
       <Menu isMenuOpen={isMenuOpen} />
       <main>{children}</main>
     </>
@@ -36,6 +40,7 @@ const Layout = ({ children }) => {
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  hideTitle: PropTypes.bool.isRequired,
 }
 
 export default Layout

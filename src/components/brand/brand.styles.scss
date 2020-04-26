@@ -4,9 +4,12 @@
 .brand {
   display: flex;
   img {
-    width: 80px;
+    width: 85px;
   }
   .brand-title {
+    &.hidden {
+      display: none;
+    }
     @include phone {
       display: none;
     }

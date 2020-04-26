@@ -27,8 +27,6 @@ section.about-me {
     }
     p {
       margin-bottom: 30px;
-      letter-spacing: 0.25px;
-      line-height: $size-large-font;
       @include desktop {
         max-width: 65vw;
         margin-bottom: 20px;

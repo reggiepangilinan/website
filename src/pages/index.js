@@ -7,7 +7,7 @@ import HireMeSection from "./home/hireme/hireme.component"
 import MyToolbeltSection from "./home/mytoolbelt/mytoolbelt.component"
 
 const IndexPage = () => (
-  <Layout>
+  <Layout hideTitle={false}>
     <SEO title="Home" />
     <WelcomeSection />
     <AboutMeSection />

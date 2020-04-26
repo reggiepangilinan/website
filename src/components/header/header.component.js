@@ -2,20 +2,11 @@ import React from "react"
 import PropTypes from "prop-types"
 import "./header.styles.scss"
 import Brand from "../brand/brand.component"
-import { useWindowScroll } from "react-use"
-const Header = ({ isMenuOpen, setIsMenuOpen }) => {
-  const { y } = useWindowScroll()
 
-  const lastPanel =
-    document.documentElement.offsetHeight -
-    document.documentElement.clientHeight -
-    75
-
-  const hasScrolledToEnd = y >= lastPanel
-
+const Header = ({ isMenuOpen, setIsMenuOpen, hideTitle }) => {
   return (
-    <header className={hasScrolledToEnd ? "transparent" : ""}>
-      <Brand />
+    <header>
+      <Brand hideTitle={hideTitle} />
       {isMenuOpen ? (
         <div
           className="header-menu"
@@ -50,6 +41,7 @@ const Header = ({ isMenuOpen, setIsMenuOpen }) => {
 Header.propTypes = {
   isMenuOpen: PropTypes.bool.isRequired,
   setIsMenuOpen: PropTypes.func.isRequired,
+  hideTitle: PropTypes.bool.isRequired,
 }
 
 export default Header
