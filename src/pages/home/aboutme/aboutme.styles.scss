@@ -28,8 +28,8 @@ section.about-me {
     p {
       margin-bottom: 30px;
       @include desktop {
-        max-width: 65vw;
-        margin-bottom: 20px;
+        max-width: 55vw;
+        margin-bottom: 30px;
       }
 
       @include tablet {
